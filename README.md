@@ -1,0 +1,2 @@
+Java连ES的学习demo，连接es数据库，用正则的方法匹配到es数据库中想要的内容。
+ES和Kibina镜像已存储docker-hub中,本地可用docker一键部署
