@@ -16,7 +16,7 @@ public enum ElasticsearchClientProvider {
     }
 
     ElasticsearchClientProvider() {
-        RestClientBuilder builder = RestClient.builder(new HttpHost("172.31.101.75", 9200, "http"));
+        RestClientBuilder builder = RestClient.builder(new HttpHost("xxx", xxx, "http"));
 
         restClientBlocking = builder.setNodeSelector(NodeSelector.SKIP_DEDICATED_MASTERS).build();
         try {
