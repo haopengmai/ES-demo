@@ -1,0 +1,26 @@
+{
+  "size": 10000,
+  "_source": ["message", "userId"],
+  "query": {
+    "bool": {
+      "minimum_should_match": 1,
+      "should": [
+        {
+          "match_phrase": {
+            "message": "engine/log/collect"
+          }
+        }
+      ],
+      "filter": [
+        {
+          "range": {
+            "@timestamp": {
+              "gte": "2024-05-10T00:00:00",
+              "lte": "2024-05-17T23:59:59"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
