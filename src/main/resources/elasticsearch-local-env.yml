@@ -1,0 +1,4 @@
+client:
+  name: demo
+  transport:
+    sniff: true
